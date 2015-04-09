@@ -33,3 +33,7 @@ div#camera-text {
 span#gps-tag {
     margin-right:20px;
 }
+
+.hidden {
+    display:none;
+}

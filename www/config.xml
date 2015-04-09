@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="evg.nabil.cc" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Conference Companion</name>
+    <icon src="www/img/logo.png"/>
+    <preference name="orientation" value="portrait" />
+    <description>
+        A sample mobile application that provides a jumping off point from which to start developing mobile apps for ServiceNow.
+    </description>
+    <author email="nabil.enayet@evergreensys.com" href="http://nabilenayet.com">
+        Nabil Enayet
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <access origin="https://*.service-now.com/" />
+</widget>

@@ -1,4 +1,11 @@
 function takePicture() {
-  navigator.camera.getPicture(function(imageURI) {
 
+	if (!navigator.camera) {
+	      alert("Camera API not supported", "Error");
+	      return;
+	  }
+
+	 
+
+  	  return false;
 }

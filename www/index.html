@@ -25,19 +25,13 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">Conference Companion</a>
+                    <a class="navbar-brand" href="#" onclick="location.reload();">Conference Companion</a>
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
                         <li>
-                            <a href="#">Login</a>
-                        </li>
-                        <li>
-                            <a href="#">About</a>
-                        </li>
-                        <li>
-                            <a href="#">Contact</a>
+                            <a href="mailto:nabil.enayet@evergreensys.com?Subject=Creator%20Con">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -56,7 +50,10 @@
                         <div id="camera-text">Tap to enter a business card</div>
                     </div>
                 </div>
+                <img id="imageContainer">
+                </img>
             </div>
+
             <!-- /.row -->
 
             <form action="javascript:alert( 'Submitted Successfully!' );">
@@ -64,7 +61,7 @@
                 <input type="name" class="form-control" name="contact_name" placeholder="Enter name">
               </div>
               <div class="form-group">
-                <input type="phone" class="form-control" name="contact_phone" placeholder="Phone Number">
+                <input type="tel" class="form-control" name="contact_phone_number" placeholder="Phone Number">
               </div>
               <div class="form-group">
                 <input type="email" class="form-control" name="contact_e_mail" placeholder="E-mail">
@@ -72,10 +69,17 @@
               <div class="form-group">
                 <input type="company" class="form-control" name="contact_company" placeholder="Company">
               </div>
-              <div class="form-group">
-                <span id="gps-tag">GPS Tag</span><input type="checkbox" name="gpsTag"></input>
+              <div class="form-group" id="gpsTagWrapper" onclick="recordCoords()">
+                <span id="gps-tag">GPS Tag</span><input type="checkbox" class="form-control" name="gpsTag" id="gpsTag">
               </div>
-              <button type="submit" class="btn btn-default pull-right">Submit</button>
+
+
+              <div class="form-group">
+                <input type="textarea" class="form-control" name="x_snc_conference_c_notes" placeholder="Notes">
+              </div>
+
+              <button type="submit" class="btn btn-primary pull-right">Submit</button>
+              <button class="btn btn-danger pull-left" onclick="location.reload();">Clear Form</button>
             </form>
 
         </div>
@@ -90,13 +94,14 @@
 
         <!--Libraries-->
         <script src="js/lib/jquery.js"></script>
-        <script src="js/lib/fastclick.js"></script>
-        <!--<script src="js/lib/bootstrap.min.js"></script>-->
+        <script src="js/lib/bootstrap.min.js"></script>
+        <!--<script src="js/lib/fastclick.js"></script>-->
         <!--<script src="js/lib/bootstrap-switch.min.js"></script>-->
 
         <!--App specific scripts-->
-        <script src="js/bs_init.js"></script>
+        <!--<script src="js/bs_init.js"></script>-->
         <!--<script src="js/camera.js"></script>-->
+        <!--<script src="js/location.js"></script>-->
         <!--<script src="js/submitForm.js"></script>-->
 
         <!--Initialize your Cordova App here-->
